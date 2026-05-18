@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering | Nicholas Opoku</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans flex flex-col min-h-screen antialiased">
+
+    <!-- Premium Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <h1 class="text-xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r select-none from-blue-600 to-cyan-500">
+                NICHOLAS OPOKU
+            </h1>
+            <nav class="flex space-x-6 text-xs uppercase tracking-widest font-semibold">
+                <a href="index.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">Home</a>
+                <!-- Active Tab -->
+                <a href="tech.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">Development</a>
+                <a href="creative.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">Multimedia</a>
+                <a href="leadership.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">Leadership</a>
+                <a href="book.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">My Books</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-5xl mx-auto w-full px-6 py-12 md:py-20 space-y-20">
+        
+        <!-- Page Header -->
+        <header class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-100 px-3 py-1 mb-4 rounded-full text-xs font-bold tracking-wide uppercase shadow-sm">
+                <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                Software Engineering
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-4">
+                Building scalable logic & <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">robust architecture.</span>
+            </h2>
+            <p class="text-lg text-slate-600 font-medium leading-relaxed">
+                Focused on full-stack web development, database management, and creating digital platforms that solve real-world community problems.
+            </p>
+        </header>
+
+        <!-- Tech Stack Grid -->
+        <section>
+            <h3 class="text-sm font-black tracking-widest text-slate-400 uppercase mb-6">Core Technologies</h3>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-bold text-slate-700 shadow-sm hover:border-blue-400 hover:text-blue-600 transition-all cursor-default">React.js</span>
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-bold text-slate-700 shadow-sm hover:border-green-400 hover:text-green-600 transition-all cursor-default">Node.js</span>
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-bold text-slate-700 shadow-sm hover:border-orange-400 hover:text-orange-600 transition-all cursor-default">SQL Databases</span>
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-bold text-slate-700 shadow-sm hover:border-yellow-400 hover:text-yellow-600 transition-all cursor-default">JavaScript (ES6+)</span>
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-bold text-slate-700 shadow-sm hover:border-cyan-400 hover:text-cyan-600 transition-all cursor-default">Tailwind CSS</span>
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-bold text-slate-700 shadow-sm hover:border-blue-500 hover:text-blue-600 transition-all cursor-default">HTML / CSS</span>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section>
+            <h3 class="text-sm font-black tracking-widest text-slate-400 uppercase mb-6">Featured Deployments</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Project 1: Family Hostel Hunters -->
+                <div class="group relative bg-slate-900 rounded-2xl p-8 border border-slate-800 hover:border-blue-500/50 transition-all duration-300 shadow-xl overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-0 right-0 p-32 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all duration-500"></div>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-400/10 px-3 py-1 rounded-full">Full-Stack App</span>
+                            <a href="#" class="text-slate-400 hover:text-white transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-3">Family Hostel Hunters</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            A comprehensive digital housing platform architected to streamline hostel discovery and listings for university students. Features structured database management for property sorting and dynamic front-end rendering.
+                        </p>
+                    </div>
+                    <div class="relative z-10 flex flex-wrap gap-2 text-xs font-bold text-slate-300 mt-auto pt-4 border-t border-slate-800">
+                        <span>#React</span> <span class="text-slate-600">•</span> <span>#Node.js</span> <span class="text-slate-600">•</span> <span>#SQL</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Campus Guide UCC -->
+                <div class="group relative bg-slate-900 rounded-2xl p-8 border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-xl overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-0 right-0 p-32 bg-cyan-500/10 rounded-full blur-3xl group-hover:bg-cyan-500/20 transition-all duration-500"></div>
+                    <div class="relative z-10 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full">Platform Management</span>
+                            <a href="#" class="text-slate-400 hover:text-white transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-3">Campus Guide UCC</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            An active digital information hub delivering critical resources to a community of over 1,000 active followers. Involves continuous platform growth strategy and digital resource architecture.
+                        </p>
+                    </div>
+                    <div class="relative z-10 flex flex-wrap gap-2 text-xs font-bold text-slate-300 mt-auto pt-4 border-t border-slate-800">
+                        <span>#WebTech</span> <span class="text-slate-600">•</span> <span>#CommunityArchitecture</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Academic & Professional Background -->
+        <section class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm">
+            <h3 class="text-sm font-black tracking-widest text-slate-400 uppercase mb-8">Background</h3>
+            
+            <div class="relative border-l-2 border-slate-100 pl-6 space-y-10">
+                <!-- Timeline Item 1 -->
+                <div class="relative">
+                    <div class="absolute -left-[35px] top-1 w-4 h-4 rounded-full bg-white border-4 border-blue-500"></div>
+                    <h4 class="text-lg font-bold text-slate-900">BSc. Computer Science</h4>
+                    <p class="text-sm font-bold text-blue-600 mb-2">University of Cape Coast (UCC)</p>
+                    <p class="text-sm text-slate-600">Focusing on software engineering principles, algorithms, full-stack architecture, and database management systems.</p>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative">
+                    <div class="absolute -left-[35px] top-1 w-4 h-4 rounded-full bg-white border-4 border-slate-300"></div>
+                    <h4 class="text-lg font-bold text-slate-900">STEM Educator</h4>
+                    <p class="text-sm font-bold text-slate-500 mb-2">Mathematics, Integrated Science, & Computing</p>
+                    <p class="text-sm text-slate-600">Professional teaching experience breaking down complex technical, mathematical, and scientific concepts into digestible curriculum for students.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modern minimal footer -->
+    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-400 mt-auto tracking-widest uppercase font-bold">
+        <p>&copy; 2026 Nicholas Opoku. <span class="text-blue-500">Rise With a Purpose.</span></p>
+    </footer>
+
+</body>
+</html>
