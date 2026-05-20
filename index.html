@@ -4,36 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicholas Opoku | Hub</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans min-h-screen antialiased flex flex-col">
+<body class="bg-slate-50 text-slate-900 font-sans min-h-screen antialiased flex flex-col justify-between">
 
-    <!-- Premium Navigation -->
     <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
             <h1 class="text-xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r select-none from-blue-600 to-cyan-500">
                 NICHOLAS OPOKU
             </h1>
-            <nav class="flex space-x-6 text-xs uppercase tracking-widest font-semibold">
+            <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs uppercase tracking-widest font-semibold">
                 <a href="index.html" class="text-blue-600 border-b-2 border-blue-600 pb-1">Home</a>
                 <a href="tech.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">Development</a>
                 <a href="creative.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">Multimedia</a>
                 <a href="leadership.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">Leadership</a>
                 <a href="book.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">My Books</a>
-                                <a href="contact.html" class="text-slate-900 border-b-2 border-slate-900 pb-1">Contact</a>
-
+                <a href="contact.html" class="text-slate-900 border-b-2 border-slate-900 pb-1">Contact</a>
             </nav>
         </div>
     </header>
 
-    <!-- Main Split Layout Engine -->
-    <main class="flex-grow flex flex-col lg:flex-row">
+    <main class="flex-grow flex flex-col lg:flex-row items-stretch">
         
-        <!-- Left 50%: The Text & Content Block -->
-        <div class="w-full lg:w-1/2 flex items-center justify-center p-8 md:p-16 lg:p-24 bg-slate-50">
+        <div class="w-full lg:w-1/2 flex items-center justify-center p-6 sm:p-12 lg:p-24 bg-slate-50">
             <div class="max-w-xl space-y-6 text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-100 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase shadow-sm">
+                <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-100 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase shadow-sm mx-auto lg:mx-0">
                     <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
                     Welcome to my digital ecosystem
                 </div>
@@ -43,37 +38,29 @@
                         I craft identity.
                     </span>
                 </h2>
-                <p class="text-base md:text-lg text-slate-600 font-medium leading-relaxed">
+                <p class="text-sm sm:text-base text-slate-600 font-medium leading-relaxed text-justify lg:text-left">
                     Nicholas Opoku is a Full-Stack Developer, Creative Director, and Student Mentor based in Cape Coast. Operating at the intersection of logic and design, he transforms complex ideas into clean software architecture, striking brand identities, and impactful digital solutions. Beyond engineering scalable web applications and leading multimedia branding, Nicholas is deeply committed to student leadership and community impact actively mentoring the next wave of tech innovators and spearheading local digital initiatives.
                 </p>
-                <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
-                    <a href="tech.html" class="bg-blue-600 text-white shadow-lg shadow-blue-200 px-7 py-3.5 rounded-xl font-bold tracking-wide hover:bg-blue-700 hover:shadow-none hover:-translate-y-0.5 transition-all duration-300 text-sm">
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
+                    <a href="tech.html" class="w-full sm:w-auto bg-blue-600 text-white shadow-lg shadow-blue-200 px-7 py-3.5 rounded-xl font-bold tracking-wide hover:bg-blue-700 hover:shadow-none hover:-translate-y-0.5 transition-all duration-300 text-sm text-center">
                         Explore My Work
                     </a>
-                    <a href="mailto:your-email@example.com" class="bg-white border-2 border-slate-200 text-slate-700 px-7 py-3.5 rounded-xl font-bold tracking-wide hover:border-blue-200 hover:bg-blue-50 transition-all duration-300 text-sm">
+                    <a href="mailto:kofydeonaga29@gmail.com" class="w-full sm:w-auto bg-white border-2 border-slate-200 text-slate-700 px-7 py-3.5 rounded-xl font-bold tracking-wide hover:border-blue-200 hover:bg-blue-50 transition-all duration-300 text-sm text-center">
                         Let's Collaborate
                     </a>
                 </div>
             </div>
         </div>
 
-        <!-- Right 50%: The Visual Picture Block -->
-        <div class="w-full lg:w-1/2 min-h-[40vh] lg:min-h-0 relative bg-slate-900">
-            <!-- 
-              INSTRUCTIONS FOR YOUR IMAGE:
-              1. Drop your profile picture inside your project folder.
-              2. Change 'images/nicholas.jpg' below to match your actual file path.
-            -->
-            <img src="Nicholas.jpg" alt="Nicholas Opoku" class="absolute inset-0 w-full h-full object-cover object-top lg:object-down grayscale hover:grayscale-0 transition-all duration-700 ease-in-out">
+        <div class="w-full lg:w-1/2 min-h-[45vh] sm:min-h-[55vh] lg:min-h-0 relative bg-[#e2e7ec] overflow-hidden order-last lg:order-none">
+            <img src="Nicholas.jpg" alt="Nicholas Opoku" class="absolute inset-0 w-full h-full object-cover object-top lg:object-down transition-all duration-700 ease-in-out">
             
-            <!-- Sleek color gradient overlay over the image to tie into the tech vibe -->
-            <div class="absolute inset-0 bg-gradient-to-r lg:bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-t from-slate-900/20 via-transparent to-transparent pointer-events-none"></div>
         </div>
 
     </main>
 
-    <!-- Modern Minimalist Footer -->
-    <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-400 tracking-widest uppercase font-bold">
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-400 tracking-widest uppercase font-bold px-4">
         <p>&copy; 2026 Nicholas Opoku. <span class="text-blue-500">Rise With a Purpose.</span></p>
     </footer>
 

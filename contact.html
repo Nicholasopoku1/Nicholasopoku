@@ -9,11 +9,11 @@
 <body class="bg-slate-50 text-slate-900 font-sans flex flex-col min-h-screen antialiased">
 
     <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-200">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
             <h1 class="text-xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r select-none from-blue-600 to-cyan-500">
                 NICHOLAS OPOKU
             </h1>
-            <nav class="flex space-x-6 text-xs uppercase tracking-widest font-semibold">
+            <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs uppercase tracking-widest font-semibold">
                 <a href="index.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">Home</a>
                 <a href="tech.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">Development</a>
                 <a href="creative.html" class="text-slate-500 hover:text-blue-600 border-b-2 border-transparent pb-1 transition-all duration-300">Multimedia</a>
@@ -24,45 +24,43 @@
         </div>
     </header>
 
-    <main class="flex-grow max-w-6xl mx-auto w-full px-6 py-12 md:py-20">
+    <main class="flex-grow max-w-6xl mx-auto w-full px-4 sm:px-6 py-8 md:py-20">
         
-        <header class="max-w-2xl mb-16">
+        <header class="max-w-2xl mb-12 md:mb-16 text-center md:text-left">
             <div class="inline-flex items-center gap-2 bg-slate-900 text-slate-100 px-3 py-1 mb-4 rounded-full text-xs font-bold tracking-wide uppercase shadow-sm">
                 💬 Connect Matrix
             </div>
-            <h2 class="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-4">
-                Let's start a <br>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-4 leading-tight">
+                Let's start a <br class="hidden sm:inline">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">new collaboration.</span>
             </h2>
-            <p class="text-lg text-slate-600 font-medium leading-relaxed">
+            <p class="text-sm sm:text-base md:text-lg text-slate-600 font-medium leading-relaxed">
                 Reach out for software engineering inquiries, creative brand direction through VYRN BUST, or leadership panels.
             </p>
         </header>
 
-        <div class="grid lg:grid-cols-12 gap-12 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             
             <div class="lg:col-span-7 space-y-8">
                 
-                <div class="bg-emerald-950 text-emerald-50 rounded-3xl p-8 border border-emerald-900 shadow-xl relative overflow-hidden group">
-                    <div class="absolute -right-16 -top-16 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all duration-500"></div>
+                <div class="bg-emerald-950 text-emerald-50 rounded-3xl p-6 sm:p-8 border border-emerald-900 shadow-xl relative overflow-hidden group">
+                    <div class="absolute -right-16 -top-16 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all duration-500 pointer-events-none"></div>
                     
                     <span class="text-[10px] font-black tracking-widest text-emerald-400 uppercase mb-2 block">Direct Broadcast Hub</span>
-                    <h3 class="text-2xl font-bold mb-3 flex items-center gap-2">
-                        WhatsApp Channels
-                    </h3>
-                    <p class="text-sm text-emerald-300/80 max-w-md mb-6 leading-relaxed">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3">WhatsApp Channels</h3>
+                    <p class="text-xs sm:text-sm text-emerald-300/80 max-w-md mb-6 leading-relaxed">
                         Join my official broadcast channel to get immediate updates on campus resources, technological insights, and strategic creative projects.
                     </p>
                     
-                    <a href="https://whatsapp.com/channel/0029Vb6AG9X1NCrMjskryF2y" target="_blank" class="inline-flex items-center gap-2 bg-emerald-500 text-slate-950 px-6 py-3 rounded-xl text-xs font-black uppercase tracking-wider hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/20">
+                    <a href="https://whatsapp.com/channel/0029Vb6AG9X1NCrMjskryF2y" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-500 text-slate-950 px-6 py-3 rounded-xl text-xs font-black uppercase tracking-wider hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/20 text-center">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-4.846c1.66.986 3.285 1.489 4.954 1.49 5.405 0 9.801-4.382 9.803-9.75.002-2.602-1.01-5.05-2.85-6.895C16.656 2.154 14.205 1.14 11.6 1.14c-5.41 0-9.81 4.383-9.813 9.752-.001 1.944.512 3.843 1.484 5.511l-.979 3.57 3.664-.959z"/></svg>
                         Join Broadcast Channel
                     </a>
                 </div>
 
                 <div>
-                    <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase mb-4">Core Social Registers</h3>
-                    <div class="grid sm:grid-cols-2 gap-4">
+                    <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase mb-4 text-center md:text-left">Core Social Registers</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         
                         <a href="https://linkedin.com/in/nicholasopoku" target="_blank" class="block p-5 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-blue-500 transition-all group">
                             <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition text-sm">LinkedIn Professional &rarr;</h4>
@@ -104,52 +102,53 @@
                             <p class="text-xs text-slate-500 mt-1">Behind-the-scenes workflow highlights, media agency updates, and quick links.</p>
                         </a>
 
-                        <a href="mailto:kofydeonaga29@gmail.com" class="block p-5 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-indigo-500 transition-all group sm:col-span-2">
+                        <a href="https://www.youtube.com/@EmeritusNicholasopoku" target="_blank" class="block p-5 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-red-600 transition-all group">
+                            <h4 class="font-bold text-slate-900 group-hover:text-red-600 transition text-sm">YouTube Account &rarr;</h4>
+                            <p class="text-xs text-slate-500 mt-1">Effective educational content, digital media production, and video scripts.</p>
+                        </a>
+
+                        <a href="mailto:kofydeonaga29@gmail.com" class="block p-5 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-indigo-500 transition-all group">
                             <h4 class="font-bold text-slate-900 group-hover:text-indigo-600 transition text-sm">Direct Mail Core &rarr;</h4>
                             <p class="text-xs text-slate-500 mt-1">Official inbox for project briefings, consultation setups, or proposals.</p>
                         </a>
-<a href="https://www.youtube.com/@EmeritusNicholasopoku" target="_blank" class="block p-5 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-yellow-500 transition-all group">
-                            <h4 class="font-bold text-slate-900 group-hover:text-yellow-600 transition text-sm">youtube Account &rarr;</h4>
-                            <p class="text-xs text-slate-500 mt-1">Effective educational Contents, media agency updates, and quick links.</p>
-                        </a>
+
                     </div>
                 </div>
 
             </div>
 
-            <div class="lg:col-span-5 bg-white border border-slate-200 rounded-3xl p-8 shadow-sm">
+            <div class="lg:col-span-5 bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
                 <h3 class="text-sm font-bold text-slate-900 mb-6">Transmit Direct Message</h3>
                 
                 <form class="space-y-4" action="https://api.web3forms.com/submit" method="POST">
-    
-    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-    
-    <input type="hidden" name="redirect" value="https://nicholasopoku.online/contact.html">
+                    
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="hidden" name="redirect" value="https://nicholasopoku.online/contact.html">
 
-    <div>
-        <label class="block text-xs uppercase tracking-wider font-bold text-slate-400 mb-2">Sender Name</label>
-        <input type="text" name="name" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 focus:bg-white transition-all" placeholder="John Doe">
-    </div>
-    <div>
-        <label class="block text-xs uppercase tracking-wider font-bold text-slate-400 mb-2">Email Address</label>
-        <input type="email" name="email" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 focus:bg-white transition-all" placeholder="john@example.com">
-    </div>
-    <div>
-        <label class="block text-xs uppercase tracking-wider font-bold text-slate-400 mb-2">Message Payload</label>
-        <textarea name="message" required rows="4" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 focus:bg-white transition-all resize-none" placeholder="Briefly describe the venture framework..."></textarea>
-    </div>
-    
-    <button type="submit" class="w-full bg-slate-900 text-white rounded-xl py-3.5 text-xs font-bold uppercase tracking-wider hover:bg-blue-600 transition-all shadow-md shadow-slate-900/10">
-        Dispatch Message
-    </button>
-</form>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider font-bold text-slate-400 mb-2">Sender Name</label>
+                        <input type="text" name="name" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 focus:bg-white transition-all" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider font-bold text-slate-400 mb-2">Email Address</label>
+                        <input type="email" name="email" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 focus:bg-white transition-all" placeholder="john@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider font-bold text-slate-400 mb-2">Message Payload</label>
+                        <textarea name="message" required rows="4" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 focus:bg-white transition-all resize-none" placeholder="Briefly describe the venture framework..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-slate-900 text-white rounded-xl py-3.5 text-xs font-bold uppercase tracking-wider hover:bg-blue-600 transition-all shadow-md shadow-slate-900/10">
+                        Dispatch Message
+                    </button>
+                </form>
             </div>
 
         </div>
 
     </main>
 
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-400 mt-auto tracking-widest uppercase font-bold">
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-400 mt-auto tracking-widest uppercase font-bold px-4">
         <p>&copy; 2026 Nicholas Opoku. <span class="text-slate-900">Rise with a purpose.</span></p>
     </footer>
 
